@@ -13,6 +13,7 @@ import net.minecraft.util.ActionResult;
 import net.minecraft.util.Formatting;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.TypedActionResult;
+import org.e11eman.crackutilities.itemscripts.Bender;
 import org.e11eman.crackutilities.itemscripts.SphereGen;
 import org.e11eman.crackutilities.itemscripts.Minigun;
 import org.e11eman.crackutilities.utilities.CClient;
@@ -26,7 +27,8 @@ import java.util.Objects;
 public class ItemScriptSystem {
     public final ItemScript[] list = {
             new Minigun(),
-            new SphereGen()
+            new SphereGen(),
+            new Bender()
     };
 
     public void onLeftClick(CallbackInfo ci) {
